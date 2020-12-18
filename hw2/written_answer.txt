@@ -1,0 +1,50 @@
+p1:
+c.
+
+My results are very similar to textbooks results. logistic regression only considers those values of the data that are close to the decision boundary so that as outliers are far from boundaries and have a very small effect, logistic regression are not sensitive to outliers compared to linear regression.
+
+p2:
+b.
+train accuracy is 0.96 and test accuracy is 0.905.
+d. 
+
+the plot shows that as the k increases, it decreases the accuracy of result no matter it is trainingSet accuracy or testing test accuracy.
+one explanation of this is that as K increases, it accepts more neighbors that is not as close and accurate to do calculation, thus resulting in decreasing accuracy.and it means that the data is to some degree free of noise, so that a small K will have higher accuracy.
+
+e.
+
+as the train set size increases, accuracy increases to 1, as it actually makes sense because the more data you train, the greater possibility closer data will be found when predicting.
+
+f. 
+
+pros for KNN: KNN does not need training step, and it is easy to understand, easy to implement all multi-class problems and binary classification, and regression.
+
+cons for KNN: KNN algorithm is very expensvie time consuming when predicting size is large. And KNN requires the features are on same scale for calculating distance, and it has no way handling missing values.
+
+Pros for LinearRegression: linear regression is more suitable for regression problem where Y is continuous and prediction time is extremely fast and straightforward.
+
+Cons for LinearRegression: it is required that relationship between dependent variable and independent variable is linear. It cannot deal with non-linear relationship.
+
+Pros for LogisticRegression: logistic regression is more suitable for classification problem. Logistic regression can calculate probability of each class. It is fast at predicting.
+
+Cons for LogisticRegression: it is tough to obtain complex relationships as it is not very powerful.If number of observations is smaller than number of features, logistic regression cannot be used.
+
+The reason we use logistic regression over linear regression is that 
+1. logistic regression can be less sensitive to outliers 
+2. to perform Linear regression we require a linear relationship between the dependent and independent variables. But to perform Logistic regression we do not require a linear relationship between the dependent and independent variables.
+3. We are doing classification instead of regression.
+
+
+p3:
+c.
+
+I choose number of components to be 200 as we can see from the graph that at number of components 350, the explained variance achieved around 90-95%, which is pretty high and we have successfully eliminated around 600 components, and we can also easily see from the graph that the CDF of explained variance is boosting from n_components = 0 to 200, and becomes flatter and flatter after 200, so we choose 200, as it is kind of the pivot point.
+
+d.
+I created two plots for this problem don't know which one you asked for.
+As the training size increases, the running time increases significantly.
+But as the number of components increases, running time does not increase very much, and it keeps at an unvarying level.
+It seems that varying training size seems to affect the fitting time more.
+
+e.
+K that I choose is 1. Number of samples for training is 21000 and number of components is 50, as its accuracy is 100% and faster than 50% of the models. It is actually the most accurate model is accuracy is 100% when time wasn't a factor.

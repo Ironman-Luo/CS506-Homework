@@ -1,0 +1,39 @@
+1.Least Squares and Logistic Regression
+
+- Generate labeled random 2D points like the ones shown in the left subfigure (0.5/0.5) 
+- Add a few outliers to the blue circles (0.5/0.5)
+- Implement least squares to classify data (1.5/1.5)
+- Implement logistic regression to classify data (1.5/1.5)
+- Plot classification into two figures side by side (0.5/0.5)
+- Explain if results are similar to Figure 1 and why  log regression is not sensitive to outliers (0.5/0.5)
+
+2.Logistic Regression and kNN Classification
+
+- Randomly split the dataset 20-80 (0/0) 
+- Classify images using Logistic Regression (1/1) 
+- Report train & test accuracy (1/1)
+- Classify the dataset using kNN (2/2) 
+- Plot train & test accuracy for k from 1 to 25 step 2 (1/1)
+- Explain your results (1/1)
+- Use kNN on different dataset sizes (3K, 6K, 9K) (4/4)
+- Report the results obtained from the previous step (1/1)
+- Pros and cons of the algorithms (1/1)
+- When and why we use logistic regression over linear regression (1/1)
+
+3.PCA - Dimensionality Reduction
+
+- Perform PCA decomposition w/ mean-centering the data (1/1)
+- Plot the CDF of the explained variance as a function of the number of principal components (2/2)
+- Choose a number of principal components and train kNN classifier (1/1)
+- Sample 3K, 6K, 9K,..,21K and fit KNN classifier (1/1)
+- Plot the running time (0.5/0.5)
+- Fix k and vary principle components from 50 to 750 (1/1)
+- Plot on the same plot (0.5/0.5) 
+- Describe the plot what does affect trend/fitting more? (1/1)
+- Produce and list the values (k, num samples, num components) of most accurate model faster than 50% of tested models (1/2) - List of values is not reported
+- How does this model compare most accurate model? (1/1)
+
+-- Bonus
+- Plot images of 10 first Principal Components (1/1)
+
+Total: 30/30 

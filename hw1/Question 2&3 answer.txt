@@ -1,0 +1,44 @@
+Question 2:
+	a.  (As I want to have as many clusters as possible in order to analyze)
+		For KMeans++, I use Elbow method and determine that Number of Clusters to be 5
+		For Hierarchical Clustering, I use Dendrogram and still determine that Number of Clusters to be 5.
+		For GMM, I look at AIC-BIC graph, and decide Number of Clusters to be 5.
+	b.  Pros for kmeans:
+			1. it is very easy to understand and implement 
+			2. it does not consume much time
+		Cons for kmeans:
+			1. while different runs on kmeans++ will sometimes generate different result based on that randomness
+			2. very sensitive to outliers as it takes computation for means
+		Pros for hierarchical:
+			1. when data size is small, it is useful
+		Cons for hierarchical:
+			1. it is extremely time-consuming when data size are large.
+		Pros for GMM:
+			1. compared to kmeans, the accuracy is better
+			2. it is more flexible
+		Cons for GMM:
+			1. if dimensions are too hight, it will fail to work
+Question 3:
+	a. The Heapmap is useful as it uses df.groupby to show the expensiveness of the whole NYC.
+	and we can see from the color of the map whether the area inside NYC is expensive or not.
+	b. see question3.py
+	c. KMeans:
+		avg price for cluster 0 195.83040710013506
+		avg price for cluster 1 119.7540497826946
+		avg price for cluster 2 110.67163175091294
+		avg price for cluster 3 116.97241286502489
+		avg price for cluster 4 99.94510869565218
+	   Hierarchical:
+		avg price for cluster 0 110.20388431141753
+		avg price for cluster 1 185.72805581262904
+		avg price for cluster 2 88.67638290824776
+		avg price for cluster 3 105.05261200966723
+		avg price for cluster 4 115.48825065274151
+	   GMM:
+	    avg price for cluster 0 136.399749176987
+		avg price for cluster 1 116.7082338902148
+		avg price for cluster 2 259.48247199132635
+		avg price for cluster 3 66.63804695249642
+		avg price for cluster 4 1340.4478935698448
+
+	d. The findings are consistent with my original thoughts, Manhattan is the most expensive.
